@@ -1,11 +1,5 @@
-import './App.scss'
+import './App.scss';
 
-function App() {
-  return (
-    <div>
-      Hello world
-    </div>
-  )
-}
-
-export default App
+export const App = () => {
+  return <div>Hello world</div>;
+};
