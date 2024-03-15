@@ -1,0 +1,23 @@
+@mixin on-light-theme {
+  @media (prefers-color-scheme: light) {
+    @content;
+  }
+}
+
+@mixin on-wide-screen {
+  @media (min-width: $media-wide-screen) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $media-desktop) {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @media (min-width: $media-tablet) {
+    @content;
+  }
+}
