@@ -1,0 +1,41 @@
+@import '../../styles/main';
+
+.logo {
+  display: flex;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  user-select: none;
+
+  @include on-tablet {
+    font-size: 32px;
+  }
+
+  &__name {
+    display: inline-block;
+    height: 31px;
+    padding-left: 2px;
+    color: $color-black;
+    background-color: $color-white;
+
+    @include on-light-theme {
+      color: $color-white;
+      background-color: $color-black;
+    }
+
+    @include on-tablet {
+      height: 36px;
+      padding-left: 4px;
+    }
+  }
+
+  &__surname {
+    display: inline-block;
+    height: 31px;
+
+    @include on-tablet {
+      height: 36px;
+    }
+  }
+}
