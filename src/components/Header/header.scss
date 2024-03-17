@@ -9,18 +9,4 @@
   @include on-tablet {
     padding: 24px 60px;
   }
-
-  &__menu-button {
-    height: 44px;
-    width: 44px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    background-image: url(../../assets/images/menu.svg);
-    cursor: pointer;
-
-    @include on-tablet {
-      display: none;
-    }
-  }
 }

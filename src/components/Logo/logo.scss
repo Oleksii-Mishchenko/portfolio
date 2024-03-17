@@ -17,11 +17,11 @@
     height: 31px;
     padding-left: 2px;
     color: $color-black;
-    background-color: $color-white;
+    background-color: $background-light;
 
     @include on-light-theme {
       color: $color-white;
-      background-color: $color-black;
+      background-color: $background-dark;
     }
 
     @include on-tablet {

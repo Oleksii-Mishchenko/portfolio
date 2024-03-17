@@ -1,0 +1,84 @@
+@import '../../styles/main';
+
+.menu {
+  &__list {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    height: 100vh;
+    padding: 50px;
+    background-color: $background-dark;
+    transition: all 0.3s;
+
+    @include on-light-theme {
+      background-color: $background-light;
+    }
+
+    @include on-tablet {
+      position: static;
+      flex-direction: row;
+      height: initial;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    &--open {
+      top: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: inherit;
+    transition: all 0.3s;
+    padding: 10px 15px;
+
+    &:hover {
+      color: $color-lemon;
+    }
+
+    @include on-light-theme {
+      border-radius: 50px;
+
+      &:hover {
+        background-color: $color-grey-dark;
+      }
+    }
+  }
+
+  &__button {
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+    @include on-light-theme {
+      filter: invert(1);
+    }
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+
+  &__button--open {
+    background-image: url(../../assets/images/menu.svg);
+  }
+
+  &__button--close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-image: url(../../assets/images/close.svg);
+  }
+}
