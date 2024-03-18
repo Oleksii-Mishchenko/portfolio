@@ -1,0 +1,10 @@
+@import '../../styles/main';
+
+.container {
+  max-width: 1224px;
+  padding-inline: 16px;
+
+  @include on-desktop {
+    padding-inline: 108px;
+  }
+}

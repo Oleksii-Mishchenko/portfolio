@@ -14,6 +14,7 @@
     height: 100vh;
     padding: 50px;
     background-color: $background-dark;
+    z-index: 1;
     transition: all 0.3s;
 
     @include on-light-theme {

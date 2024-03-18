@@ -1,0 +1,57 @@
+@import '../../styles/main';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding-block: 40px 64px;
+
+  @include on-tablet {
+    flex-direction: row;
+    gap: 40px;
+    padding-block: 30px 80px;
+  }
+
+  @include on-desktop {
+    gap: 80px;
+  }
+
+  &__info {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: 56px;
+    white-space: pre-line;
+
+    @include on-wide-screen {
+      font-size: 100px;
+    }
+  }
+
+  &__description {
+    max-width: 500px;
+    margin-bottom: 32px;
+    font-size: 16px;
+
+    @include on-wide-screen {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+  }
+
+  &__photo {
+    flex-basis: 50%;
+  }
+
+  &__portrait {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
