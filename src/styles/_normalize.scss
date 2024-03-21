@@ -1,14 +1,4 @@
 h1,
-h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  color: $color-white;
-
-  @include on-light-theme {
-    color: $color-black;
-  }
-}
-
-h1,
 h2,
 h3,
 h4,

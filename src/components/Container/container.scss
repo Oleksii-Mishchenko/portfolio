@@ -4,6 +4,10 @@
   max-width: 1224px;
   padding-inline: 16px;
 
+  @include on-tablet {
+    padding-inline: 40px;
+  }
+
   @include on-desktop {
     padding-inline: 108px;
   }

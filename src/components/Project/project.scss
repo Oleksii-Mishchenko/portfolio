@@ -1,0 +1,171 @@
+@import '../../styles/main';
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @include on-desktop {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+
+    @include on-wide-screen {
+      max-width: none;
+    }
+  }
+
+  &__visual {
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 12px;
+    background-color: lighten($color: $background-dark, $amount: 6.1);
+
+    @include on-light-theme {
+      background-color: darken($color: $background-light, $amount: 6.1);
+    }
+  }
+
+  &__detail {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    background-color: $background-dark;
+    color: $color-white;
+    user-select: none;
+
+    @include on-desktop {
+      top: 16px;
+      left: 16px;
+      padding: 8px 16px;
+    }
+
+    @include on-light-theme {
+      background-color: $background-light;
+      color: $color-black;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__name {
+    @extend %h3;
+
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    @extend %p;
+
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    margin-bottom: 40px;
+
+    @include on-desktop {
+      margin-bottom: 48px;
+    }
+
+    &-title {
+      @extend %h4;
+
+      margin-bottom: 16px;
+    }
+
+    &-entry {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 16px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+
+      ::first-letter {
+        text-transform: uppercase;
+      }
+
+      &-name {
+        color: $color-white;
+
+        @include on-light-theme {
+          color: $color-black;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 24px;
+    padding: 8px 18px 15px;
+    border-radius: 50px;
+    
+    @include on-light-theme {
+      background-color: $color-grey-intense;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-name {
+      padding-right: 24px;
+      padding-bottom: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 150%;
+      border-bottom: 2px solid $color-lemon;
+      color: $color-lemon;
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 22px;
+        width: 22px;
+        margin-left: 4px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include on-desktop {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      @include on-desktop {
+        font-size: 16px;
+      }
+
+      &--project {
+        &::after {
+          background-image: url(../../assets/images/arrow.svg);
+        }
+      }
+
+      &--github {
+        &::after {
+          background-image: url(../../assets/images/github.svg);
+        }
+      }
+    }
+  }
+}

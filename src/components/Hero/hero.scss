@@ -22,23 +22,19 @@
   }
 
   &__title {
-    margin-bottom: 12px;
-    font-size: 56px;
-    white-space: pre-line;
+    @extend %h1;
 
-    @include on-wide-screen {
-      font-size: 100px;
-    }
+    margin-bottom: 12px;
   }
 
   &__description {
+    @extend %p;
+
     max-width: 500px;
     margin-bottom: 32px;
-    font-size: 16px;
 
     @include on-wide-screen {
       margin-bottom: 40px;
-      font-size: 18px;
     }
   }
 
@@ -53,5 +49,6 @@
     margin: 0 auto;
     object-fit: contain;
     object-position: center;
+    border-radius: 16px;
   }
 }

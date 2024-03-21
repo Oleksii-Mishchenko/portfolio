@@ -1,0 +1,48 @@
+@import '../../styles/main';
+
+.projects {
+  padding-block: 64px;
+
+  @include on-desktop {
+    padding-block: 80px;
+  }
+
+  &__header {
+    margin: 0 auto;
+    max-width: 500px;
+
+    @include on-desktop {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+
+    margin-bottom: 12px;
+
+    @include on-wide-screen {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__description {
+    @extend %p;
+
+    margin-bottom: 64px;
+
+    @include on-desktop {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+
+    @include on-desktop {
+      gap: 120px;
+    }
+  }
+}
