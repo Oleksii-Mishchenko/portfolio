@@ -1,3 +1,4 @@
+import { About } from '../About';
 import { Hero } from '../Hero';
 import { Projects } from '../Projects';
 import './main.scss';
@@ -8,6 +9,8 @@ export const Main = () => {
       <Hero />
 
       <Projects />
+
+      <About />
     </main>
   );
 };

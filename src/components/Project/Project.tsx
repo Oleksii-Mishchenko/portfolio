@@ -2,6 +2,7 @@ import React from 'react';
 import { IProject } from '../../types/Project';
 import { Line } from '../Line';
 import './project.scss';
+import { Link } from '../Link';
 
 type Props = {
   project: IProject;
@@ -45,19 +46,8 @@ export const Project: React.FC<Props> = ({ project }) => {
           </ul>
 
           <div className="project__links">
-            {links.map(({ path, name, style }) => (
-              <a
-                key={name}
-                href={path}
-                className={`project__link`}
-                target="_blank"
-              >
-                <span
-                  className={`project__link-name project__link-name--${style}`}
-                >
-                  {name}
-                </span>
-              </a>
+            {links.map(link => (
+              <Link relClass="project__link" link={link} key={link.name} />
             ))}
           </div>
         </div>

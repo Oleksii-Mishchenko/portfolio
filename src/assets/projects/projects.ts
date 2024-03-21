@@ -30,7 +30,7 @@ export const projects: IProject[] = [
 
   {
     id: 2,
-    name: 'Gadget store',
+    name: 'E-commerce Gadget store',
     description:
       'The multi-page online store for selling phones, tablets, and accessories.',
     detail: 'Graduation project',
