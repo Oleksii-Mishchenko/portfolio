@@ -1,5 +1,55 @@
 @import '../../styles/main';
 
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 64px 102px;
 
+  @include on-desktop {
+    flex-direction: row;
+    align-items: initial;
+    column-gap: 48px;
+    padding-block: 122px 200px;
+  }
+
+  &__title {
+    @extend %h2;
+
+    width: 100%;
+    max-width: $container-width;
+    margin-bottom: 12px;
+
+    @include on-desktop {
+      flex-basis: 50%;
+      width: auto;
+      max-width: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: $container-width;
+
+    @include on-desktop {
+      flex-basis: 50%;
+      width: auto;
+      max-width: none;
+    }
+
+    &-title {
+      @extend %h4;
+
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      margin-bottom: 24px;
+
+      @include on-desktop {
+        margin-bottom: 52px;
+      }
+    }
+  }
 }

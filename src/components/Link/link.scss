@@ -2,10 +2,11 @@
 
 .link {
   display: inline-block;
-  padding: 8px 18px 15px;
+  padding: 8px 18px 15px 0;
   border-radius: 50px;
 
   @include on-light-theme {
+    padding: 8px 18px 15px;
     background-color: $color-grey-intense;
   }
 

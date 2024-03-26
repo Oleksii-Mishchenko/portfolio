@@ -9,7 +9,7 @@
 
   &__header {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: $container-width;
 
     @include on-desktop {
       margin: 0;
