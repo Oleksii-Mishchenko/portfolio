@@ -1,0 +1,55 @@
+@import '../../styles/main';
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  max-width: $container-width;
+  margin: 0 auto;
+  gap: 40px;
+  padding-block: 64px;
+
+  @include on-tablet {
+    gap: 64px;
+    padding-block: 80px;
+  }
+
+  @include on-desktop {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  &__info {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    @extend %h2;
+
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    @extend %p;
+  }
+
+  &__icons {
+    flex-basis: 50%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 30px 20px;
+
+    @include on-wide-screen {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 40px 25px;
+    }
+  }
+
+  &__item {
+    width: fit-content;
+  }
+}

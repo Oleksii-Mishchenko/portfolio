@@ -1,0 +1,29 @@
+@import '../../styles/main';
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100px;
+
+  @include on-wide-screen {
+    width: 120px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    &--mono {
+      fill: $color-white-background;
+
+      @include on-light-theme {
+        fill: #161514;
+      }
+    }
+  }
+
+  &__label {
+    text-align: center;
+  }
+}
