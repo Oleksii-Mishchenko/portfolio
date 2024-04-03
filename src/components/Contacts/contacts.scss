@@ -1,0 +1,76 @@
+@import '../../styles/main';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-block: 64px;
+
+  @include on-tablet {
+    gap: 64px;
+  }
+
+  @include on-desktop {
+    flex-direction: row;
+    gap: 80px;
+    padding-block: 80px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend %h2;
+    margin-bottom: 12px;
+
+    @include on-wide-screen {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__message {
+    @extend %p;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+
+  &__general {
+    margin-bottom: 40px;
+  }
+
+  &__contact {
+    @extend %p;
+
+    margin-bottom: 8px;
+
+    &-link {
+      color: $color-white;
+      text-decoration: underline $color-lemon 2px;
+      text-underline-offset: 4px;
+
+      @include on-wide-screen {
+        text-underline-offset: 7px;
+      }
+
+      @include on-light-theme {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 24px;
+
+    @include on-desktop {
+      gap: 32px;
+    }
+  }
+}
