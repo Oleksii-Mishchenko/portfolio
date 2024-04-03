@@ -4,4 +4,8 @@
   height: 1px;
   width: 100%;
   background-color: $color-grey-intense;
+
+  @include on-light-theme {
+    background-color: $color-grey-light;
+  }
 }
