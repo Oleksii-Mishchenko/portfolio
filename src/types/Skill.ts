@@ -1,6 +1,6 @@
-import { FunctionComponent, SVGProps } from 'react';
+import { ISVGComponent } from './SVGComponent';
 
 export interface ISkill {
-  image: FunctionComponent<SVGProps<SVGSVGElement>>;
+  image: ISVGComponent;
   label: string;
 }
