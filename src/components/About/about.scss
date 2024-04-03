@@ -45,6 +45,8 @@
     }
 
     &-description {
+      @extend %p;
+
       margin-bottom: 24px;
 
       @include on-desktop {
