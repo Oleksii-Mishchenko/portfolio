@@ -1,6 +1,8 @@
 import { Container } from '../Container';
 import { MainButton } from '../MainButton';
 import photo from '../../assets/images/portrait.jpg';
+import { scrollToSection } from '../../utils/scrollToSection';
+import { ISectionId } from '../../types/SectionId';
 import './hero.scss';
 
 export const Hero = () => {
@@ -15,7 +17,10 @@ export const Hero = () => {
             accessible, visually appealing and responsive websites.
           </p>
 
-          <MainButton text="Contact Me" />
+          <MainButton
+            label="Contact Me"
+            onClick={() => scrollToSection(ISectionId.Contacts)}
+          />
         </div>
 
         <div className="hero__photo">
