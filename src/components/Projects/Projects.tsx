@@ -1,11 +1,16 @@
 import { projects } from '../../assets/projects/projects';
+import { ISectionId } from '../../types/SectionId';
 import { Container } from '../Container';
 import { Project } from '../Project';
 import './projects.scss';
 
 export const Projects = () => {
   return (
-    <Container className="container main__container" hasLine>
+    <Container
+      className="container main__container"
+      id={ISectionId.Projects}
+      hasLine
+    >
       <section className="projects">
         <div className="projects__header">
           <h2 className="projects__title">Featured Projects</h2>

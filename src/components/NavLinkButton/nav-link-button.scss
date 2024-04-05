@@ -1,0 +1,25 @@
+@import '../../styles/main';
+
+.nav-link-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03px;
+  color: inherit;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-lemon;
+  }
+
+  @include on-light-theme {
+    border-radius: 50px;
+
+    &:hover {
+      background-color: $color-grey-dark;
+    }
+  }
+}

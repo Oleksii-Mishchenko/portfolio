@@ -1,11 +1,12 @@
 import { socials } from '../../assets/socials/socials';
+import { ISectionId } from '../../types/SectionId';
 import { Container } from '../Container';
 import { Social } from '../Social';
 import './contacts.scss';
 
 export const Contacts = () => {
   return (
-    <Container className="container main__container">
+    <Container className="container main__container" id={ISectionId.Contacts}>
       <section className="contacts">
         <div className="contacts__info">
           <h2 className="contacts__title">Let’s connect</h2>
@@ -38,7 +39,7 @@ export const Contacts = () => {
 
           <ul className="contacts__socials">
             {socials.map(social => (
-              <li className="contacts__social">
+              <li className="contacts__social" key={social.link}>
                 <Social social={social} />
               </li>
             ))}

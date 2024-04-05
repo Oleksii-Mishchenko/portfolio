@@ -1,11 +1,16 @@
 import { Container } from '../Container';
-import './skills.scss';
 import { skills } from '../../assets/skills/skills';
 import { Skill } from '../Skill';
+import { ISectionId } from '../../types/SectionId';
+import './skills.scss';
 
 export const Skills = () => {
   return (
-    <Container className="container main__container" hasLine>
+    <Container
+      className="container main__container"
+      id={ISectionId.Skills}
+      hasLine
+    >
       <section className="skills">
         <div className="skills__info">
           <h2 className="skills__title">My Tech Stack</h2>

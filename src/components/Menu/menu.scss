@@ -34,25 +34,6 @@
     }
   }
 
-  &__link {
-    display: inline-block;
-    color: inherit;
-    transition: all 0.3s;
-    padding: 10px 15px;
-
-    &:hover {
-      color: $color-lemon;
-    }
-
-    @include on-light-theme {
-      border-radius: 50px;
-
-      &:hover {
-        background-color: $color-grey-dark;
-      }
-    }
-  }
-
   &__button {
     height: 44px;
     width: 44px;

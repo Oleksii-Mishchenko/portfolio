@@ -1,6 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import cn from 'classnames';
+import { navLinkButtons } from '../../assets/navLinkButtons/navLinkButtons';
+import { NavLinkButton } from '../NavLinkButton';
 import './menu.scss';
+import { scrollToSection } from '../../utils/scrollToSection';
+import { ISectionId } from '../../types/SectionId';
 
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,6 +26,17 @@ export const Menu = () => {
     };
   }, [isOpen]);
 
+  const handleNavButtonClick = useCallback(
+    (sectionId: ISectionId) => {
+      if (isOpen) {
+        setIsOpen(false);
+      }
+
+      scrollToSection(sectionId);
+    },
+    [isOpen],
+  );
+
   return (
     <nav className="menu">
       <button
@@ -37,23 +52,14 @@ export const Menu = () => {
           onClick={() => setIsOpen(false)}
         />
 
-        <li className="menu__item">
-          <a href="/" className="menu__link">
-            Projects
-          </a>
-        </li>
-
-        <li className="menu__item">
-          <a href="/" className="menu__link">
-            About
-          </a>
-        </li>
-
-        <li className="menu__item">
-          <a href="/" className="menu__link">
-            Contacts
-          </a>
-        </li>
+        {navLinkButtons.map(navLinkButton => (
+          <li className="menu__item" key={navLinkButton.sectionId}>
+            <NavLinkButton
+              navLinkButton={navLinkButton}
+              handleClick={handleNavButtonClick}
+            />
+          </li>
+        ))}
       </ul>
     </nav>
   );

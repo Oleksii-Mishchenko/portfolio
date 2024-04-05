@@ -1,10 +1,15 @@
+import { ISectionId } from '../../types/SectionId';
 import { Container } from '../Container';
 import { Link } from '../Link';
 import './about.scss';
 
 export const About = () => {
   return (
-    <Container className="container main__container" hasLine>
+    <Container
+      className="container main__container"
+      id={ISectionId.About}
+      hasLine
+    >
       <section className="about">
         <h2 className="about__title">About me</h2>
 
