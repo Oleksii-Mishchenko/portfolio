@@ -20,7 +20,7 @@ export const Contacts = () => {
         <div className="contacts__content">
           <div className="contacts__general">
             <p className="contacts__contact">
-              Waiting for your emails{' '}
+              Waiting for your emails at{' '}
               <a
                 href="mailto:alex.mishch@gmail.com"
                 className="contacts__contact-link"

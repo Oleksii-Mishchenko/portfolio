@@ -1,4 +1,9 @@
 /* eslint-disable max-len */
+import soloAgency from '/src/assets/images/projects/soloagency.jpg';
+import gadget from '/src/assets/images/projects/gadget.jpg';
+import game from '/src/assets/images/projects/2048-game.jpg';
+import air from '/src/assets/images/projects/air.jpg';
+import olufsen from '/src/assets/images/projects/bang-olufsen.jpg';
 import { IProject } from '../../types/Project';
 
 export const projects: IProject[] = [
@@ -8,7 +13,7 @@ export const projects: IProject[] = [
     description:
       'The website for the real event agency. It was developed by a team of 4 specialists: front-end and back-end developers, designer and QA engineer.',
     detail: 'Team project',
-    photo: './src/assets/images/projects/soloagency.jpg',
+    photo: soloAgency,
     info: {
       year: 2024,
       role: 'Front-end Developer',
@@ -34,7 +39,7 @@ export const projects: IProject[] = [
     description:
       'The multi-page online store for selling phones, tablets, and accessories.',
     detail: 'Graduation project',
-    photo: './src/assets/images/projects/gadget.jpg',
+    photo: gadget,
     info: {
       year: 2023,
       role: 'Front-end Developer',
@@ -59,7 +64,7 @@ export const projects: IProject[] = [
     description:
       'The game "2048" is a puzzle game where the player combines numbers to achieve higher values, aiming to reach the number 2048.',
     detail: 'Graduation project',
-    photo: './src/assets/images/projects/2048-game.jpg',
+    photo: game,
     info: {
       year: 2023,
       role: 'Front-end Developer',
@@ -84,7 +89,7 @@ export const projects: IProject[] = [
     description:
       'This landing page showcases the fictitious Strategic Agency that offers a range of services with a focus on creativity and human relationships.',
     detail: 'Landing page',
-    photo: './src/assets/images/projects/air.jpg',
+    photo: air,
     info: {
       year: 2023,
       role: 'Front-end Developer',
@@ -109,7 +114,7 @@ export const projects: IProject[] = [
     description:
       "This landing page presents Bang & Olufsen, showcasing its premium audio products and emphasizes the brand's commitment to delivering exceptional sound quality and innovative technologies.",
     detail: 'Landing page',
-    photo: './src/assets/images/projects/bang-olufsen.jpg',
+    photo: olufsen,
     info: {
       year: 2023,
       role: 'Front-end Developer',

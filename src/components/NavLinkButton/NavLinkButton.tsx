@@ -1,18 +1,16 @@
 import { INavLinkButton } from '../../types/NavLinkButton';
-import { ISectionId } from '../../types/SectionId';
 import './nav-link-button.scss';
 
-type Props = {
+type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   navLinkButton: INavLinkButton;
-  handleClick: (sectionId: ISectionId) => void;
 };
 
 export const NavLinkButton: React.FC<Props> = ({
-  navLinkButton: { sectionId, label },
-  handleClick,
+  navLinkButton: { label },
+  ...rest
 }) => {
   return (
-    <button className="nav-link-button" onClick={() => handleClick(sectionId)}>
+    <button className="nav-link-button" {...rest}>
       {label}
     </button>
   );

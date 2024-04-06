@@ -56,7 +56,7 @@ export const Menu = () => {
           <li className="menu__item" key={navLinkButton.sectionId}>
             <NavLinkButton
               navLinkButton={navLinkButton}
-              handleClick={handleNavButtonClick}
+              onClick={() => handleNavButtonClick(navLinkButton.sectionId)}
             />
           </li>
         ))}
