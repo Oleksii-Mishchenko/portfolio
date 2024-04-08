@@ -47,7 +47,7 @@ export const Project: React.FC<Props> = ({ project }) => {
 
           <div className="project__links">
             {links.map(link => (
-              <Link relClass="project__link" link={link} key={link.name} />
+              <Link link={link} key={link.name} />
             ))}
           </div>
         </div>

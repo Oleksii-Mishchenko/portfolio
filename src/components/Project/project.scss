@@ -111,11 +111,13 @@
     }
   }
 
-  &__link {
-    margin-right: 24px;
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 24px;
 
-    &:last-child {
-      margin-right: 0;
+    @include on-tablet {
+      flex-direction: row;
     }
   }
 }

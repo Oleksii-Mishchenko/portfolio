@@ -1,18 +1,13 @@
-import cn from 'classnames';
 import { IProjectLink } from '../../types/Project';
 import './link.scss';
 
 type Props = {
   link: IProjectLink;
-  relClass?: string;
 };
 
-export const Link: React.FC<Props> = ({
-  link: { path, name, style },
-  relClass,
-}) => {
+export const Link: React.FC<Props> = ({ link: { path, name, style } }) => {
   return (
-    <a href={path} target="_blank" className={cn('link', relClass)}>
+    <a href={path} target="_blank" className="link">
       <span className={`link__name link__name--${style}`}>{name}</span>
     </a>
   );
