@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# My personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### [LINK TO PORTFOLIO](https://oleksii-mishchenko.github.io/portfolio/)
 
-Currently, two official plugins are available:
+## Overview
+Welcome to my portfolio! This project is my personal portfolio where you can find general information about me along with my photo. Additionally, you'll find a list of projects I have completed, along with links to their GitHub repositories and demo versions. There's also a section showcasing the technologies I am proficient in. At the end of the page, you'll find my contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- HTML5
+- SCSS (BEM methodology)
+- Typescript
+- React + Vite
+- Vite Plugin svgr
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Personal Portfolio:** Showcase my skills, projects, and contact information in one centralized location.
+- **Responsive Design:** Ensures optimal viewing experience across a wide range of devices and screen sizes.
+- **Theme Switcher:** Offers the flexibility to automatically toggle between light and dark themes based on user preferences.
+- **Project Showcase:** Highlight my completed projects with links to their GitHub repositories and demo versions.
+- **Skills Display:** Display a comprehensive list of technologies and skills I possess.
+- **Contact Information:** Easily accessible contact details for recruiters and potential collaborators.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Learning Experience
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Throughout this project, I've gained valuable learning experiences:
+
+- Specialized in frontend development with React and Vite.
+- Implemented two themes: light and dark, depending on user preferences.
+- Utilized HTML, CSS (with BEM methodology), and SVG images.
+- Expanded knowledge in working with SVG images as React components.
+- Successfully set up deployment to GitHub Pages.
