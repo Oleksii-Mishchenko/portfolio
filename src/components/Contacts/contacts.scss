@@ -51,16 +51,27 @@
     margin-bottom: 8px;
 
     &-link {
+      border-bottom: 2px solid $color-lemon;
       color: $color-white;
-      text-decoration: underline $color-lemon 2px;
-      text-underline-offset: 4px;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom-color: $color-white;
+        color: $color-lemon;
+      }
 
       @include on-wide-screen {
-        text-underline-offset: 7px;
+        border-bottom-width: 3px;
       }
 
       @include on-light-theme {
+        border-bottom-color: $color-grey-intense;
         color: $color-black;
+
+        &:hover {
+          border-bottom-color: $color-lemon;
+          color: $color-grey-intense;
+        }
       }
     }
   }
