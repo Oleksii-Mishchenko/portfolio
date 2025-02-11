@@ -34,7 +34,14 @@ export const About = () => {
             well as deeply loving pets and enjoying walks in nature.
           </p>
 
-          <Link link={{ style: 'project', name: 'More about me', path: '/' }} />
+          <Link
+            link={{
+              style: 'project',
+              name: 'More about me',
+              // eslint-disable-next-line max-len
+              path: 'https://antique-bear-7fc.notion.site/Oleksii-Mishchenko-CV-1979219f3cd8801491adc97367f430fd',
+            }}
+          />
         </div>
       </section>
     </Container>

@@ -31,7 +31,12 @@ export const Contacts = () => {
 
             <p className="contacts__contact">
               For more info here’s my{' '}
-              <a href="/" target="_blank" className="contacts__contact-link">
+              <a
+                // eslint-disable-next-line max-len
+                href="https://antique-bear-7fc.notion.site/Oleksii-Mishchenko-CV-1979219f3cd8801491adc97367f430fd"
+                target="_blank"
+                className="contacts__contact-link"
+              >
                 CV
               </a>
             </p>
