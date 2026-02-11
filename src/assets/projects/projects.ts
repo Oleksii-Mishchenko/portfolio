@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import soloAgency from '/src/assets/images/projects/soloagency.jpg';
+import dodomu from '/src/assets/images/projects/dodomu.jpg';
 import gadget from '/src/assets/images/projects/gadget.jpg';
 import game from '/src/assets/images/projects/2048-game.jpg';
 import air from '/src/assets/images/projects/air.jpg';
@@ -9,6 +10,27 @@ import { IProject } from '../../types/Project';
 export const projects: IProject[] = [
   {
     id: 1,
+    name: 'DODOMU.AI',
+    description:
+      'AI-powered rental marketplace connecting tenants and providers. The platform allows users to both search for housing and publish rental listings using smart filters, personalized recommendations, and an intuitive interface. Developed as a full-featured web application with authentication, role-based flows, and real-time data interaction.',
+    detail: 'Commercial project',
+    photo: dodomu,
+    info: {
+      year: 2025,
+      role: 'Front-end Developer',
+      client: 'Startup/2home',
+    },
+    links: [
+      {
+        style: 'project',
+        name: 'view project',
+        path: 'https://dev.dodomu.ai/',
+      },
+    ],
+  },
+
+  {
+    id: 2,
     name: 'Solo agency',
     description:
       'The website for the real event agency. It was developed by a team of 4 specialists: front-end and back-end developers, designer and QA engineer.',
@@ -34,7 +56,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 2,
+    id: 3,
     name: 'E-commerce Gadget store',
     description:
       'The multi-page online store for selling phones, tablets, and accessories.',
@@ -59,7 +81,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: '2048 Game',
     description:
       'The game "2048" is a puzzle game where the player combines numbers to achieve higher values, aiming to reach the number 2048.',
@@ -84,7 +106,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: 'Air. Strategic agency',
     description:
       'This landing page showcases the fictitious Strategic Agency that offers a range of services with a focus on creativity and human relationships.',
@@ -109,7 +131,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: 'Bang & Olufsen',
     description:
       "This landing page presents Bang & Olufsen, showcasing its premium audio products and emphasizes the brand's commitment to delivering exceptional sound quality and innovative technologies.",
